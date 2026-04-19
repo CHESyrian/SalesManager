@@ -1,0 +1,9 @@
+PyQt6
+SQLAlchemy>=2.0
+psycopg[binary]
+python-dotenv
+alembic
+reportlab
+pandas
+openpyxl
+passlib[argon2]

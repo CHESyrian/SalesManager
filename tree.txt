@@ -1,0 +1,119 @@
+SalesManager
+├── alembic.ini
+├── app
+│   ├── config.py
+│   ├── constants.py
+│   ├── exceptions.py
+│   ├── __init__.py
+│   ├── logging_config.py
+│   ├── main.py
+├── assets
+│   ├── fonts
+│   ├── icons
+│   └── images
+├── core
+│   ├── __init__.py
+│   ├── services
+│   │   ├── auth_service.py
+│   │   ├── customer_service.py
+│   │   ├── __init__.py
+│   │   ├── inventory_service.py
+│   │   ├── order_service.py
+│   │   ├── product_service.py
+│   │   └── report_service.py
+│   ├── use_cases
+│   │   ├── add_product.py
+│   │   ├── create_order.py
+│   │   ├── generate_invoice.py
+│   │   ├── __init__.py
+│   │   └── register_customer.py
+│   └── utiles
+│       ├── calculations.py
+│       ├── helpers.py
+│       ├── __init__.py
+│       └── validators.py
+├── data
+│   ├── backups
+│   ├── __init__.py
+│   └── seeds.py
+├── domain
+│   ├── __init__.py
+│   ├── models
+│   │   ├── customer.py
+│   │   ├── __init__.py
+│   │   ├── inventory_log.py
+│   │   ├── mixins.py
+│   │   ├── order_item.py
+│   │   ├── order.py
+│   │   ├── product.py
+│   │   └── user.py
+│   └── schemas
+│       ├── customer_schema.py
+│       ├── __init__.py
+│       ├── order_schema.py
+│       ├── product_schema.py
+│       └── user_schema.py
+├── infrastructure
+│   ├── database
+│   │   ├── base.py
+│   │   ├── connection.py
+│   │   ├── init_db.py
+│   │   ├── __init__.py
+│   │   ├── migrations
+│   │   │   ├── env.py
+│   │   │   ├── README
+│   │   │   ├── script.py.mako
+│   │   │   └── versions
+│   │   │       ├── dca090518602_initial_schema.py
+│   │   └── session.py
+│   ├── external
+│   │   ├── email_service.py
+│   │   ├── export_service.py
+│   │   ├── __init__.py
+│   │   └── pdf_generator.py
+│   ├── __init__.py
+│   └── repositories
+│       └── product_repository.py
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+├── run.py
+├── scripts
+│   ├── create_admin.py
+│   ├── __init__.py
+├── tests
+│   ├── __init__.py
+│   ├── test_auth.py
+│   ├── test_customers.py
+│   ├── test_orders.py
+│   └── test_products.py
+├── tree.txt
+└── ui
+    ├── __init__.py
+    ├── main_window.py
+    ├── modules
+    │   ├── auth
+    │   │   ├── __init__.py
+    │   │   ├── login_view.py
+    │   ├── customers
+    │   │   ├── controller.py
+    │   │   └── view.py
+    │   ├── dashboard
+    │   │   ├── controller.py
+    │   │   └── view.py
+    │   ├── __init__.py
+    │   ├── products
+    │   │   ├── controller.py
+    │   │   └── view.py
+    │   └── sales
+    │       ├── controller.py
+    │       └── view.py
+    ├── styles
+    │   ├── __init__.py
+    │   └── themes.py
+    └── widgets
+        ├── dialog_boxes.py
+        ├── form_widgets.py
+        ├── __init__.py
+        ├── sidebar.py
+        └── table_widget.py
